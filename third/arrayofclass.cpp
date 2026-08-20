@@ -10,16 +10,11 @@ class Student {
    public:
    // creating a constructor
     Student(){
-      rollnumber=0;
-      name="0";
-      marks=0;
+      cout<<"Enter roll number, name and marks of student"<<endl;
+      cin>>rollnumber>>name>>marks;
     }
    // creating constructor to take input values(Parameterized constructor)
-   Student(int r,string n,int m){
-      rollnumber=r;
-      name=n;
-      marks=m;
-   }
+   
    // creating display function to display this information
    void display(){
     
@@ -30,15 +25,15 @@ class Student {
 };
 
    int main(){
-      Student student[7];
-      for(int i=0; i<7;i++) {
-          student[0] = Student(72, "Manvi", 100);
-          student[1] = Student(73, "Mayank",99);
-          student[2] = Student(74, "Monika", 98);
-          student[3] = Student(75, "Naitik", 97);
-          student[4] = Student(76, "Nema", 96);
-          student[5] = Student(77, "Ojasvi", 95);
-          student[6] = Student(78, "Sankar", 94);
+      int size;
+      cout<<"Enter number of students:"<<endl;
+      cin>>size;
+      Student student[size];
+
+      for(int i=0; i<size;i++) {
+         student[i];
+         
+         
           student[i].display();
       }
    return 0;

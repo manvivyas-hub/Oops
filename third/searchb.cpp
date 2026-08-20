@@ -1,18 +1,18 @@
 #include <iostream>
 using namespace std;
 int main (){
-    int n;
+    int size;
     cout<<"Enter the number of elements in the array: ";
-    cin>>n;
-    float array[n];
+    cin>>size;
+    float array[size];
     cout<<"Enter the elements of the array: "<<endl;
-    for ( int i=0;i<n;i++)
+    for ( int i=0;i<size;i++)
     {
         cin>>array[i];
     }
-    for (int i=0;i<n;i++)
+    for (int i=0;i<size;i++)
     {
-        for (int j=0; j<n-i;j++)
+        for (int j=0; j<size-i;j++)
         {
             if (array[j-1]>array[j])
             {
@@ -23,7 +23,7 @@ int main (){
         }
     }
     cout<<"The sorted array is: "<<endl;
-    for (int i=0;i<n;i++)   
+    for (int i=0;i<size;i++)   
     {
         cout<<array[i]<<" ";
     }
@@ -31,7 +31,7 @@ int main (){
     cout<<"\nEnter the target value to search: ";
     cin>>target;
     int begin=0;
-    int end=n-1;
+    int end=size-1;
     int mid;
     while (begin <= end)
     { 
