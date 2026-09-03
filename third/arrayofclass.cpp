@@ -9,12 +9,17 @@ class Student {
    // for public information
    public:
    // creating a constructor
+   
     Student(){
       cout<<"Enter roll number, name and marks of student"<<endl;
       cin>>rollnumber>>name>>marks;
     }
    // creating constructor to take input values(Parameterized constructor)
-   
+   Student(int r, string n, int m){
+      rollnumber=r;
+      name=n;
+      marks=m;
+   }
    // creating display function to display this information
    void display(){
     

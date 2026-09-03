@@ -11,10 +11,8 @@ class Concatenate{
         cin>>two;
     }
     friend void display(){
-
     }
     friend void concatenate(){
-
     }
 };
 void display(const Concatenate &obj){
