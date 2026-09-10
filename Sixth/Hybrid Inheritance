@@ -1,0 +1,54 @@
+#include <iostream>
+using namespace std;
+
+class Animal
+{
+public:
+
+    void eat()
+    {
+        cout << "Animal eats" << endl;
+    }
+};
+
+class Dog : virtual public Animal
+{
+public:
+
+    void bark()
+    {
+        cout << "Dog barks" << endl;
+    }
+};
+
+class Cat : virtual public Animal
+{
+public:
+
+    void meow()
+    {
+        cout << "Cat meows" << endl;
+    }
+};
+
+class Pet : public Dog, public Cat
+{
+public:
+
+    void play()
+    {
+        cout << "Pet plays" << endl;
+    }
+};
+
+int main()
+{
+    Pet p;
+
+    p.eat();
+    p.bark();
+    p.meow();
+    p.play();
+
+    return 0;
+}
