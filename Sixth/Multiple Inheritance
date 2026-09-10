@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+class Father
+{
+public:
+
+    void fatherProperty()
+    {
+        cout << "Property from Father" << endl;
+    }
+};
+
+class Mother
+{
+public:
+
+    void motherProperty()
+    {
+        cout << "Property from Mother" << endl;
+    }
+};
+
+class Child : public Father, public Mother
+{
+public:
+
+    void childProperty()
+    {
+        cout << "Child property" << endl;
+    }
+};
+
+int main()
+{
+    Child c;
+
+    c.fatherProperty();
+    c.motherProperty();
+    c.childProperty();
+
+    return 0;
+}
