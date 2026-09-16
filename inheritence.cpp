@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
 //single inheritence
+//Animal is the parent or base class
 class Animal{
     public:
     void eat(){
         cout<<"Animal eats."<<endl;
 }
 };
+//Cat is the child or derieved class
 class Cat:public Animal{
     public:
     void grooms(){
