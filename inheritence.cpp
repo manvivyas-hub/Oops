@@ -6,7 +6,7 @@ class Animal{
     public:
     void eat(){
         cout<<"Animal eats."<<endl;
-}
+     }
 };
 //Cat is the child or derieved class
 class Cat:public Animal{
