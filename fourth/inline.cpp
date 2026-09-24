@@ -8,17 +8,17 @@ inline int cube(int n){
 }
 int main(){
     int a,b,c,d;
-    cout<<"Enter two numbers: "<<endl;
+    cout<<"Enter two numbers: ";
     cin>>a>>b;
-    cout<<"Multiplication of "<<a<<" and "<<b<<" is: "<<multiplication(a,b)<<endl;
-    cout<<"Enter three numbers: "<<endl;
+    cout<<"Multiplication of "<<a<<" and "<<b<<" is: "<<multiplication(a,b);
+    cout<<"\nEnter three numbers: ";
     cin>>a>>b>>c;
-    cout<<"Multiplication of "<<a<<", "<<b<<" and "<<c<<" is: "<<multiplication(a,b,c)<<endl;
-    cout<<"Enter four numbers: "<<endl;
+    cout<<"Multiplication of "<<a<<", "<<b<<" and "<<c<<" is: "<<multiplication(a,b,c);
+    cout<<"\nEnter four numbers: ";
     cin>>a>>b>>c>>d;
-    cout<<"Multiplication of "<<a<<", "<<b<<", "<<c<<" and "<<d<<" is: "<<multiplication(a,b,c,d)<<endl;
-    cout<<"Enter a number to find its cube: "<<endl;
+    cout<<"Multiplication of "<<a<<", "<<b<<", "<<c<<" and "<<d<<" is: "<<multiplication(a,b,c,d);
+    cout<<"\nEnter a number to find its cube: ";
     cin>>a;
-    cout<<"Cube of "<<a<<" is: "<<cube(a)<<endl;
+    cout<<"Cube of "<<a<<" is: "<<cube(a);
     return 0;
 }

@@ -13,23 +13,13 @@ class Number{
     void putdatad(){
         cout<<"The number after decrement:"<<num<<endl;
     }
-    // this is for postfix as we have given a parameter
-     void operator++(int)
+    void operator++()
     {
         num++;
     }
-    void operator--(int)
-    {
-        num--;
-    }
-    // this is for prefix as there is no parameter given
-    void operator++()
-    {
-        ++num;
-    }
     void operator--()
     {
-        --num;
+        num--;
     }
 };
 int main(){
@@ -38,16 +28,7 @@ int main(){
     cout<<"The number is:"<<A.num<<endl;
     ++A;
     A.putdatai();
-    A++;
-    A.putdatai();
     --A;
-    A.putdatad();
-    A--;
     A.putdatad();
     return 0;
 }
-/*operators which cannot get overloaded are
-1)SCOPE RESOULTION OPERATOR ::
-2) SIZE OF OPERATOR (sizeof)
-3)CLASS OBJECT OPERATOR .
-4)CONDITIONAL OPERATOR ?:*/
