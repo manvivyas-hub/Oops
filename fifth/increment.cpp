@@ -33,17 +33,20 @@ class Number{
     }
 };
 int main(){
-    Number A;
-    A.getdata();
-    cout<<"The number is:"<<A.num<<endl;
-    ++A;
-    A.putdatai();
-    A++;
-    A.putdatai();
-    --A;
-    A.putdatad();
-    A--;
-    A.putdatad();
+    Number N;
+    N.getdata();
+    // Postfix increment
+    N++;
+    N.putdatai();
+    // Prefix increment
+    ++N;
+    N.putdatai();
+    // Postfix decrement
+    N--;
+    N.putdatad();
+    // Prefix decrement
+    --N;
+    N.putdatad();
     return 0;
 }
 /*operators which cannot get overloaded are

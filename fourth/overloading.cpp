@@ -6,19 +6,19 @@ float area(float radius){
 float area( float length, float breadth){
     return length*breadth;
 }
-float area(float base, float height, float extra){
-    return 0.5*base*height;
+float area(float base, float height, float factor){
+    return factor*base*height;
 }
 int main(){
     float radius,length,breadth,base,height;
-    cout<<"Enter radius of circle: "<<endl;   
+    cout<<"Enter radius of circle: ";   
     cin>>radius;
-    cout<<"Area of circle is: "<<area(radius)<<endl;    
-    cout<<"Enter length and breadth of rectangle: "<<endl;
+    cout<<"\nArea of circle is: "<<area(radius);    
+    cout<<"\nEnter length and breadth of rectangle: ";
     cin>>length>>breadth;
-    cout<<"Area of rectangle is: "<<area(length,breadth)<<endl;
-    cout<<"Enter base and height of triangle: "<<endl;
+    cout<<"\nArea of rectangle is: "<<area(length,breadth);
+    cout<<"\nEnter base and height of triangle: ";
     cin>>base>>height;
-    cout<<"Area of triangle is: "<<area(base,height,0.5)<<endl;
+    cout<<"\nArea of triangle is: "<<area(0.5,base,height);
     return 0;
 }
